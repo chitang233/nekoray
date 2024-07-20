@@ -417,6 +417,7 @@ namespace NekoGui {
     QString FindCoreAsset(const QString &name) {
         QStringList search{};
         search << QApplication::applicationDirPath();
+        search << "/usr/share/sing-box";
         search << "/usr/share/sing-geoip";
         search << "/usr/share/sing-geosite";
         search << "/usr/lib/nekobox";
